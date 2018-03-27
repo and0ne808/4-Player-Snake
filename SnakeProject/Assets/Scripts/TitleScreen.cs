@@ -9,6 +9,10 @@ public class TitleScreen : MonoBehaviour {
 		SceneManager.LoadScene("PlayerSelect");
 	}
 
+	public void OptionsMenu() {
+		SceneManager.LoadScene("OptionsMenu");
+	}
+
 	public void QuitGame() {
 		Application.Quit();
 	}
