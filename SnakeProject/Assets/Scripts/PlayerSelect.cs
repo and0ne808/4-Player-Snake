@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class PlayerSelect : MonoBehaviour {
 
-	private bool player1Selected = false;
-	private bool player2Selected = false;
-	private bool player3Selected = false;
-	private bool player4Selected = false;
+	public bool player1Selected = false;
+	public bool player2Selected = false;
+	public bool player3Selected = false;
+	public bool player4Selected = false;
 
 	public Text player1Text;
 	public Text player2Text;
