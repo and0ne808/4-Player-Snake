@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using System.Linq;
 
 public class OptionsMenu : MonoBehaviour {
 
@@ -22,6 +23,7 @@ public class OptionsMenu : MonoBehaviour {
 				currentResolutionIndex = i;
 			}
 		}
+		options = options.Distinct().ToList();
 		resolutionDropdown.AddOptions(options);
 		resolutionDropdown.value = currentResolutionIndex;
 		resolutionDropdown.RefreshShownValue();
